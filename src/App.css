@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+.div-container {
+    height: 500px;
+    width: 700px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 15px;
+    box-shadow: 5px 10px 8px rgb(158, 158, 158);
+    margin-top: 200px;
+}
+@media(max-width:500px){
+    .div-container{
+        width: 300px;
+        height: 700px;
+        grid-template-columns: 1fr;
+        margin-top:20px;
+    }
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.left-side{
+    background-image:linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    flex: 1;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.left-great{
+    margin-left: 140px;
+    margin-top:0
+}
+.circle-container{
+    background-image:linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    align-items: center;
+    position: relative;
+}
+.summary-heading{
+    font-weight: bold;
+    padding: 30px;
+    font-size: 25px;
+}
+.number{
+    color: white;
+    font-size:65px;
+    font-weight: bold;
+    position: absolute;
+    left:65px;
+    top:55px;
+}
+.score{
+    font-weight: 600;
+    color: gray;
+}
+.score-data{
+    font-weight: 700;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h3,h1,h4{
+    color:white;
+}
+h4{
+    padding: 0 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.right-side{
+    background-color: white;
+    border-radius: 15px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4{
+    background-color:hsl(0, 88%, 94%) ;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 50px 150px 1fr;
+    margin: 30px;
+    border-radius: 10px;
+    align-items: center;
+}
+.grid-2{
+    background-color:  hsl(38, 100%, 93%);
+}
+.grid-3{
+    background-color: hsl(166, 80%, 90%);
+    
+}
+.grid-4{
+    background-color: hsl(234, 92%, 90%);
+}
+.grid-1-name{
+    color: hsl(0, 100%, 67%)
+}
+.grid-2-name{
+    color:hsl(39, 100%, 56%);
+}
+.grid-3-name{
+    color:hsl(166, 100%, 37%);
+}
+.grid-4-name{
+    color:hsl(234, 85%, 45%);
+}
+.grid-icon{
+    padding-left: 10px;
+}
+.grid-button{
+    height: 50px;
+    width:285px;
+    border-radius: 50px;
+    margin: 0 30px ;
+    border: solid 1px;
+    background-color:  hsl(252, 100%, 67%);
+    color: white;
+    cursor: pointer;
+}
+.grid-button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: hsl(252, 100%, 67%);;
 }
