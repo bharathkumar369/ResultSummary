@@ -57,7 +57,3 @@ I brushup my knowledge using "https://www.w3schools.com/" site which helped me
 to finish my project.
 
 
-
-## Acknowledgments
-
-I am starting to believe that anybody can be a developer if they put their into it.
